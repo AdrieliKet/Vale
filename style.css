@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a4a;
+}
+body{
+    overflow-x: hidden;
+}
+#menu{
+	background-color: #3273dc;
+	height: 20px;
+	padding: 20px 0px;
+	padding-bottom:20px;
+	font-size: 18px;
+	font-weight:bold;
+	border-width: 2px;
+}
+
+#menu h3{
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+.navegacao{
+	width: 1140px;
+	height: 81.421px;
+	margin: 10px auto;
+}
+
+.automatico{
+	margin:0 auto;
+    width:1140px;
+	height: 100%;
+}
+
+#borda{
+    border: 1px solid #111;
+    margin: 25px;
+    padding: 25px;
+    width: 888px;
+}
+.titulo{
+    margin: 0 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+#numero-vale{
+    float: left;
+}
+#numero-vale p{
+    font-size: 15px;
+    padding: 8px 0;
+}
+#numero-vale input{
+    width: 142px;
+    height: 30px;
+    padding: 5px 9px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+}
+#valor{
+    float: left;
+    margin-left:30px;
+}
+#valor p{
+    font-size: 15px;
+}
+#valor input {
+    width: 142px;
+    height: 30px;
+    margin-left: 0px;
+    padding: 5px 9px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+}
+.clear{
+    clear: both;
+}
+#nome{
+    margin-top: 20px;
+}
+#nome input{
+    height: 30px;
+    margin-top: 0px;
+    padding: 5px 9px;
+    width: 880px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+}
+#cidade{
+    float: left;
+    margin-top: 20px;
+}
+#cidade input{
+    height: 30px;
+    margin-top: 0px;
+    padding: 5px 9px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    width: 425px;
+}
+#data{
+    float: left;
+    margin-top: 20px;
+    margin-left:30px;
+}
+#data input{
+    height: 30px;
+    margin-top: 0px;
+    margin-left:0px;
+    padding: 5px 9px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    width: 425px;
+}
+
+#dados-empresa input{
+    height: 30px;
+    margin-top: 0px;
+    padding: 5px 9px;
+    width: 880px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+}
+#duas-vias{
+    margin-top: 20px;
+}
+
+#duas-vias input{
+    margin-top: 10px;
+}
+
+#gerar input{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #3273dc;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#gerar i{
+    font-size: 30px;
+    color: #fff;
+}
+#print{
+    display: none;
+}
+
+#print input{
+    width: 130px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #3273dc;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    left: 800px;
+}
+#recibo, #recibo2{
+    border: 1px solid #111;
+    margin: 25px;
+    padding: 25px;
+    width: 888px;
+    display: none;
+    
+}
+
+.t-vale{
+    background-color: #f3f2f2;
+    padding: 10px;
+}
+#num, #num2{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+#val, #val2{
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+
+.num-vale{
+    float: right;
+    position: relative;
+    right: 150px;
+    top: -25px;
+}
+
+.num-vale b{
+    position: relative;
+    left: 85px;
+    top: -40px;
+    padding: 4px 10px;
+}
+
+.num-vale p{
+    font-size: 18px;
+}
+
+.dados{
+    margin-left: 30px;
+}
+#nom, #nom2{
+    position: relative;
+    top: -19px;
+    left: 55px;
+}
+
+#valo, #valo2{
+    position: relative;
+    top: -19px;
+    left: 80px;
+}
+
+#cid-data, #cid-data2{
+    position: relative;
+    top: -19px;
+    left: 100px;
+}
+
+.assinatura{
+    border-top: 1px solid #333;
+    width: 300px;
+    text-align: center;
+    margin: 25px auto;
+    padding: 12px;
+}
+
+.dados-empresa{
+    text-align: right;
+    font-size: 12px;
+}
+
+.errorInput {
+    border: 1px solid rgb(243, 6, 6) !important;
+}
+
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    .printable, .printable * {
+      visibility: visible;
+    }
+    .printable {
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+    .confiPrint{
+        border: 1px solid #111;
+        margin: 25px;
+        padding: 25px;
+        width: 888px;
+        display: none;
+        
+    }
+  }
+
+  @media (max-width: 1050px){
+	.automatico{
+		width:900px;
+	}
+    #borda {
+        width: 800px;
+    }
+
+    #nome input {
+        width: 790px;
+    }
+    
+    #data input {
+        width: 335px;
+    }
+    
+    #dados-empresa input {
+        width: 790px;
+    }
+
+    #print input {
+        left: 700px;
+    }
+    #recibo {
+        width: 800px;
+    
+    }
+    
+    #recibo2 {
+        width: 800px;
+    }
+}
+@media (max-width: 960px){
+	.automatico{
+		width:720px;
+	}
+    #borda {
+        width: 650px;
+    }
+
+    #nome input {
+        width: 630px;
+    }
+    
+    #cidade input {
+        width: 358px;
+    }
+
+    #data {
+        margin-left: 20px;
+    }
+    
+    #data input {
+        width: 250px;
+    }
+    
+    #dados-empresa input {
+        width: 630px;
+    }
+
+    #print input {
+        left: 600px;
+    }
+
+    #recibo {
+        width: 650px;
+    }
+    
+    #recibo2 {
+        width: 650px;
+    }
+}
+@media (max-width: 760px){
+	.automatico{
+		width:540px;
+	}
+    #borda {
+        width: 450px;
+    }
+    
+    #nome input {
+        width: 430px;
+    }
+    
+    #cidade input {
+        width: 258px;
+    }
+    
+    #data {
+        margin-left: 20px;
+    }
+    
+    #data input {
+        width: 150px;
+    }
+    
+    #dados-empresa input {
+        width: 430px;
+    }
+
+    #print input {
+        left: 400px;
+    }
+    #recibo {
+        width: 450px;
+    }
+    
+    #recibo2 {
+        width: 450px;
+    }
+}
+@media (max-width: 560px){
+	.automatico{
+		width:340px;
+	}
+    #borda {
+        width: 300px;
+    }
+    #numero-vale input {
+        width: 102px;
+    }
+
+    #valor input {
+        width: 142px;
+    }
+    #nome input {
+        width: 280px;
+    }
+    
+    #cidade input {
+        width: 280px;
+    }
+    
+    #data {
+        margin-left: 0px;
+    }
+    
+    #data input {
+        width: 280px;
+    }
+    
+    #dados-empresa input {
+        width: 280px;
+    }
+
+    #print input {
+        left: 250px;
+    }
+    
+    #recibo {
+        width: 300px;
+    }
+    
+    #recibo2, #recibo2 {
+        width: 300px;
+    }
+
+    .assinatura {
+        width: 200px;
+    }
+
+}
+@media (max-width: 470px){
+	.automatico{
+		width:400px;
+	}
+    #borda {
+        width: 240px;
+    }
+    #valor{
+        margin-left: 0px;
+    }
+    
+    #nome input {
+        width: 230px;
+    }
+    
+    #cidade input {
+        width: 230px;
+    }
+    
+    #data input {
+        width: 230px;
+    }
+    
+    #dados-empresa input {
+        width: 230px;
+    }
+
+    #print input {
+        left: 150px;
+    }
+    
+    #recibo {
+        width: 240px;
+        font-size: 10px;
+    }
+    
+    #recibo2 {
+        width: 240px;
+        font-size: 10px;
+    }
+    .num-vale p, #val, #val2{
+
+        font-size: 10px;
+    }
+    
+    .assinatura {
+        width: 150px;
+    }
+
+    .num-vale {
+        right: 100px;
+        top: -15px;
+    }
+
+    #num, #num2 {
+        top: -12px;
+        left: 18px;
+    }
+    .num-vale b {
+        left: 45px;
+        top: -24px;
+        padding: 4px 10px;
+    }
+
+    #val, #val2{
+        top: -12px;
+        left: 30px;
+    }
+
+    #nom, #nom2{
+        top: -12px;
+        left: 35px;
+    }
+
+    #valo, #valo2 {
+        top: -12px;
+        left: 50px;
+    }
+    #cid-data, #cid-data2 {
+        top: -12px;
+        left: 70px;
+    }
+
+    .dados-empresa {
+        font-size: 8px;
+    }
+
+}
