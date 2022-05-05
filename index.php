@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geragor vale</title>
+    <title>Gerador vale</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,13 +26,13 @@
                 <form action="gerar.php" method="post">
                 <div id="numero-vale">
                     <h3>Número:</h3>
-                    <input type="text" id="numero" name="numero"><br>
+                    <input type="text" id="numero" name="numero" required><br>
                     <p>Número do vale</p> 
                 </div>
 
                 <div id="valor">
                     <h3>Valor:</h3>
-                    <input type="text" id="valorI" name="valor"><br>
+                    <input type="text" id="valorI" name="valor" required><br>
                     <p>Valor do vale</p> 
                 </div>
                 <br>
@@ -40,46 +40,40 @@
 
                 <div id="nome">
                     <h3>Nome:</h3>
-                    <input type="text" id="nomeI" name="nome">
+                    <input type="text" id="nomeI" name="nome" required>
                 </div>
+
                 <div id="cidade">
                     <h3>Cidade:</h3>
-                    <input type="text" id="cidadeI" name="cidade">
+                    <input type="text" id="cidadeI" name="cidade" required>
                 </div>
                     
                 <div id="data">
                     <h3>Data:</h3>
-                    <input type="date" id="dataI" name="data">
+                    <input type="date" id="dataI" name="data" required>
                 </div>
+
                 <div class="clear"></div>
                 <br>
+
                 <div id="dados-empresa">
                     <h3>Dados da Empresa:</h3>
-                    <input type="text" id="dadosEmpresa" name="dadosEmpresa">
+                    <input type="text" id="dadosEmpresa" name="dadosEmpresa" required>
                 </div>
 
                 <div id="duas-vias">
                     <h3>Duas vias?</h3>
-                    <input type="checkbox" id="segundaVia" name="segundaVia">
+                    <input type="checkbox" id="segundaVia" name="segundaVia" >
                     <label for="segundaVia"> Sim</label><br><br>
                 </div>
                     
                 <div id="gerar">
                     <input type="submit" value="Gerar Vale" >
                 </div>
-                </form>
-                    
-                
-
-                
-                
-                    
+            </form>  
             </div>
         </div>
-
-        
     </div>
-    
 </body>
 
 </html>

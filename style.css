@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -66,8 +66,10 @@ body{
     float: left;
     margin-left:30px;
 }
+
 #valor p{
     font-size: 15px;
+    
 }
 #valor input {
     width: 142px;
@@ -115,7 +117,7 @@ body{
     padding: 5px 9px;
     border: 1px solid rgb(167, 167, 167);
     border-radius: 4px;
-    width: 425px;
+    width: 391px;
 }
 
 #dados-empresa input{
@@ -147,28 +149,26 @@ body{
     font-size: 30px;
     color: #fff;
 }
-#print{
-    display: none;
-}
 
 #print input{
     width: 130px;
     height: 30px;
     font-size: 20px;
-    background-color: #3273dc;
+    background-color: #1d74ff;
     border-radius: 4px;
     color: #fff;
     position: relative;
     left: 800px;
+    margin-top: 20px;
 }
+
 #recibo, #recibo2{
     border: 1px solid #111;
     margin: 25px;
     padding: 25px;
     width: 888px;
-    display: none;
     
-}
+} 
 
 .t-vale{
     background-color: #f3f2f2;
@@ -190,6 +190,13 @@ body{
     position: relative;
     right: 150px;
     top: -25px;
+}
+
+#recibo .num-vale b{
+    position: relative;
+    left: 85px;
+    top: -21px;
+    padding: 4px 10px;
 }
 
 .num-vale b{
@@ -237,10 +244,6 @@ body{
     font-size: 12px;
 }
 
-.errorInput {
-    border: 1px solid rgb(243, 6, 6) !important;
-}
-
 @media print {
     body * {
       visibility: hidden;
@@ -276,7 +279,7 @@ body{
     }
     
     #data input {
-        width: 335px;
+        width: 300px;
     }
     
     #dados-empresa input {
@@ -316,7 +319,7 @@ body{
     }
     
     #data input {
-        width: 250px;
+        width: 220px;
     }
     
     #dados-empresa input {
@@ -356,7 +359,7 @@ body{
     }
     
     #data input {
-        width: 150px;
+        width: 130px;
     }
     
     #dados-empresa input {
@@ -386,7 +389,7 @@ body{
     }
 
     #valor input {
-        width: 142px;
+        width: 122px;
     }
     #nome input {
         width: 280px;
@@ -512,4 +515,4 @@ body{
         font-size: 8px;
     }
 
-}
+} 
