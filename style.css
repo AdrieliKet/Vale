@@ -169,6 +169,9 @@ body{
     width: 888px;
     
 } 
+#recibo2{
+    display: none;
+}
 
 .t-vale{
     background-color: #f3f2f2;
